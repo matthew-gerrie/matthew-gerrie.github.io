@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Matthew Gerrie">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Matthew Gerrie - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="header">
+        <img src="matthewImage.jpg" id="myImage">
+        <h1>
+            Matthew Gerrie
+        </h1>
+        <p id="professionalTitle">Software Developer</p>
+        <!--Add buttons here to download resume, and contact me button-->
+        <a href="Matthew Gerrie-Resume.pdf" download><button type="button" class="button" id="resumeDownload"><i class="fa fa-download"></i>Resume</button></a>
+        <a href="#input-name"><button type="button" class="button" id="contactButton">Contact Me</button></a>
+    </div>
+    <div class="about">
+        <div class="aboutMe">
+            <h2>
+                About Me and Academic Honesty
+            </h2>
+            <p>
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                No part of this assessment has been copied manually or electronically from any other source
+                (including
+                web sites) except for the information supplied by the WEB222 instructors and / or made available
+                in
+                this
+                assessment for my use.
+                I also declare that no part of this assignment has been distributed to other students.
+            </p>
+            <p>
+                <b>Date:</b> April 9th, 2020
+            </p>
+        </div>
+
+
+        <div class="basicInfo">
+            <h2>Basic Information</h2>
+            <p id="age"><b>Age:</b> 29</p>
+            <p id="email"><b>Email:</b> mgerrie@myseneca.ca</p>
+            <p id="language"><b>Language:</b> English</p>
+            <p id="classSec"><b>Class Section:</b> NAA</p>
+            <p id="studId"><b>Student ID:</b> 154422216</p>
+            <p id="instruct"><b>Instructor:</b> David Humphrey</p>
+        </div>
+
+    </div>
+
+    <h2 id="educationTitle">Education</h2>
+    <div class="senecaContainer">
+        <div class="senecaInfo">
+            <p>2021-2023 (Expected)</p>
+            <p>Seneca College</p>
+            <p><em>Toronto, Ontario</em></p>
+        </div>
+
+
+
+        <div class="senecaDiploma">
+            <h2>Advanced Diploma - Computer Programming and Analysis</h2>
+            <p><b>Seneca College<br>GPA: 4.0</b></p>
+            <p>
+                Throughout the course of this program I have developed my programming knowledge specifically
+                in the following languages: C, C++, JavaScript, SQL, and HTML. I have also become
+                comfortable
+                using CSS to help design web pages in a visually pleasing manner.
+            </p>
+        </div>
+    </div>
+    <div class="mcmasterContainer">
+        <div class="mcmasterInfo">
+            <p>2010-2015</p>
+            <p>McMaster University</p>
+            <p><em>Hamilton, Ontario</em></p>
+        </div>
+
+
+        <div class="mcmasterDegree">
+            <h2>Honours Bachelor of Commerce</h2>
+            <p><b>McMaster University</b></p>
+            <p>
+                Developed strong analytical skills specifically in the area of finance.
+                Also developed strong logistically knowledge which was used in a co-op placement at New Balance Canada's headquarters where I had
+                the role of Inventory Fulfillment Analyst for a 16-month period. These skills were also utilized in future career roles,
+                such as Replenishment Analyst and Senior Forecast Analyst at Home Depot Canada, as well as Store Planner for Lululemon.
+            </p>
+        </div>
+    </div>
+
+    <h2 id="contactMeTitle">Contact Me</h2>
+    <form id="contactForm" action="https://httpbin.org/post" method="POST">
+        <h3 id="detailEnter">Enter your information below</h3>
+        <input type="text" id="input-name" name="input-name" placeholder="Name" tabindex="1" autocomplete="name" required>
+        <input type="email" id="input-email" name="input-email" placeholder="Email" tabindex="2" autocomplete="email" required>
+        <input type="text" id="input-address" name="input-address" placeholder="Address" tabindex="3" autocomplete="street-address" required>
+        <input type="text" id="input-city" name="input-city" placeholder="City" tabindex="4" list="suggestions" required>
+        <datalist id="suggestions">
+            <option label="Barrie" value="Barrie"></option>
+            <option label="Calgary" value="Calgary"></option>
+            <option label="Charlottetown" value="Charlottetown"></option>
+            <option label="Chibougamau" value="Chibougamau"></option>
+            <option label="Chilliwack" value="Chilliwack"></option>
+            <option label="Cold Lake" value="Cold Lake"></option>
+            <option label="Dorval" value="Dorval"></option>
+            <option label="Edmonton" value="Edmonton"></option>
+            <option label="Flin Flon" value="Flin Flon"></option>
+            <option label="Hamilton" value="Hamilton"></option>
+            <option label="Iqualuit" value="Iqualuit"></option>
+            <option label="Ottawa" value="Ottawa"></option>
+            <option label="Miramichi" value="Miramichi"></option>
+            <option label="Montreal" value="Montreal"></option>
+            <option label="Red Deer" value="Red Deer"></option>
+            <option label="St. John" value="St. John"></option>
+            <option label="St. John's" value="St. John's"></option>
+            <option label="Toronto" value="Toronto"></option>
+            <option label="Vancouver" value="Vancouver"></option>
+            <option label="Whitehorse" value="Whitehorse"></option>
+            <option label="Winnipeg" value="Winnipeg"></option>
+            <option label="Yellowknife" value="Yellowknife"></option>
+        </datalist>
+        <input type="text" id="input-postal" name="input-postal" placeholder="Postal Code" tabindex="5"
+            pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" required>
+        <input type="tel" id="input-phone" name="input-phone" placeholder="Phone Number" tabindex="6" required>
+        <h3 id="reason">Contact Reason</h3>
+        <fieldset>
+            <div id="fieldDiv">
+                <input type="radio" id="question" value="Question" name="userSelection" class="radioInput" checked
+                    tabindex="7">
+                <label for="question" class="radioLabel">Question</label>
+                <input type="radio" id="comment" value="Comment" name="userSelection" class="radioInput" tabindex="8">
+                <label for="comment" class="radioLabel">Comment</label>
+                <input type="radio" id="hiring" value="Hiring" name="userSelection" class="radioInput" tabindex="9">
+                <label for="hiring" class="radioLabel">Hiring</label>
+            </div>
+        </fieldset>
+        <textarea rows="5" cols="40" id="input-message" name="input-message" placeholder="Message" tabindex="10" required></textarea>
+        <input type="submit" id="input-submit" name="input-submit" value="Submit" tabindex="11">
+    </form>
+    <footer id="footer">
+        <p>Website created by: Matthew Gerrie</p>
+        <a href="#top">Back to top</a>
+    </footer>
+    <!-- Main App JavaScript File -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
